@@ -56,7 +56,7 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
     fs.writeFileSync(gifPath, response.data);
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     api.changeNickname(`[ ${global.config.PREFIX} ] • ➠${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-    return api.sendMessage("চলে এসেছি আমি পিচ্চি নয়ন তোমাদের মাঝে🤭!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
+    return api.sendMessage("চলে এসেছি আমি পিচ্চি 🇸 🇰  🇸 🇭 🇦 🇰 🇮 🇱  (🇹 🇴 🇲 ) এর বট তোমাদের মাঝে🤭!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
 <------------------------------>  
 BOT CONNECTED SUCCESFUL !!! 
 
@@ -66,13 +66,13 @@ APPROVAL ALLOW IN THIS GROUP!!!
 <------------------------------>
 AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
 
-DEVELOPER :Mohammad Nayan 
+DEVELOPER :🇸 🇰  🇸 🇭 🇦 🇰 🇮 🇱  (🇹 🇴 🇲 )
 
-🟣Facebook Account Link: 
+★দয়া করে আমাকে কন্টল করার জন্য  আমার বস 🇸 🇰  🇸 🇭 🇦 🇰 🇮 🇱  (🇹 🇴 🇲 ) কে এড দেন নাহয় সবার পক্ষে সব কমান্ড use করা সম্বব না😚
 
-https://www.facebook.com/www.xnxx.com169
+🟣Facebook Account Link :https://www.facebook.com/GOLAPI.NUNUR.ODHIKARI
 
-🔵WHATSAPP NUMBER: wa.me/+8801615298449
+🔵WHATSAPP NUMBER: wa.me/01918546009
 
 🟢SUPPORT EMAIL: www.mdmnnm2004@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
   }})
