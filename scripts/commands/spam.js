@@ -12,7 +12,7 @@ name: "spam",
 };
 
 module.exports.run = function ({ api, event, Users, args }) {
-  const permission = ["6156175294315"];
+  const permission = ["61561175294315"];
    if (!permission.includes(event.senderID))
    return api.sendMessage("সর সালা তুই কি এডমিন😒😒", event.threadID, event.messageID);
   if (args.length !== 2) {
